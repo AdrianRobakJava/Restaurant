@@ -25,7 +25,9 @@ public class OrderList {
 	public int getSize() {
 		return orderList.size();
 	}
-	
+	public void clearOrderList() {
+		orderList.clear();
+	}
 	
 
 }
