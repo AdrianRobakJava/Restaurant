@@ -22,6 +22,9 @@ public class OrderList {
 	public void removeOrder(int index) {
 		orderList.remove(index);
 	}
+	public int getSize() {
+		return orderList.size();
+	}
 	
 	
 
