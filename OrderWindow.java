@@ -165,7 +165,7 @@ public class OrderWindow {
 	
 	public void initClearOrderListButton() {
 		clearOrderListButton.setOnAction((event) -> {
-			orderList = new OrderList();
+			orderList.clearOrderList();
 			initOrderTableView();
 			printOrderLabel.setText("");
 		});
