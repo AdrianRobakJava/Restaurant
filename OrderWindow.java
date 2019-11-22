@@ -118,8 +118,10 @@ public class OrderWindow {
 	
 	public void initPrintOrderButton() {
 		printOrderButton.setOnAction((event) -> {
-			orderPrinter();
-			printOrderLabel.setText("The order has been accepted");
+			if (orderList.getSize() > 0) {
+				orderPrinter();
+				printOrderLabel.setText("The order has been accepted");
+			}
 		});
 	}
 	
