@@ -109,8 +109,10 @@ public class OrderWindow {
 
 	public void initRemoveOrderButton() {
 		removeOrderButton.setOnAction((event) -> {
-			orderList.removeOrder(currentOrderIndex);
-			initOrderTableView();
+			if (orderList.getSize() > 0) {
+				orderList.removeOrder(currentOrderIndex);
+				initOrderTableView();
+			}
 		});
 	}
 	
